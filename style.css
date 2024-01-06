@@ -10,6 +10,11 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+.container{
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
 .header {
     width: 100%;
     height: 90vh;
@@ -86,7 +91,7 @@ a {
 .banner-btn {
     background-color: #f43d3d;
     color: white;
-    border: 1px solid #f43d3d;
+    border: 2px solid #f43d3d;
     border-radius: 30px;
     padding: 18px 30px;
     outline: #f43d3d;
@@ -100,7 +105,7 @@ a {
     outline: #f43d3d;
     background-color:transparent;
     color: #f43d3d;
-    border: 1px solid #f43d3d!important;
+    border: 2px solid #f43d3d!important;
     transition: .3s;
     cursor: pointer;
     border-radius: 30px;
@@ -113,4 +118,265 @@ a {
 .image img{
     width: 100%;
     height: 100%;
+}
+
+.web-hosting-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    flex-direction: column;
+    background-color:white;
+    padding-bottom: 50px;
+}
+.web-hosting-headline{
+    font-size: 36px;
+    font-weight: 700;
+    color: #05035e;
+    margin-top: 15px;
+}
+.web-hosting-desc{
+    line-height: 2;
+    font-size: 16px;
+    font-weight: medium;
+    margin: 15px;
+    color: #4c4a4a;
+}
+.search-bar{
+ width: 520px;
+ height: 57px;
+ margin: 0 auto;
+ box-shadow: 2px 2px 8px #dad8d8;
+ position: relative;
+ background-color: #ffffff;
+ border-radius: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ gap: 10px;
+ margin-top: 12px;
+}
+.input-search{
+ padding: 8px 20px;
+ width: 100%;
+ height: 100%;
+ border-radius: 30px;
+ border: none;
+ outline: none;
+ font-size: 16px;
+
+}
+.input-search:focus{
+    border: none;
+    outline: none;
+}
+.search-icon{
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 160px;
+    height: 55px;
+    background-color: #f43d3d;
+    color: white;
+    border: 1px solid #f43d3d;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    align-content: center;
+    gap: 10px;
+}
+.input-search-image{
+width: 30px;
+height: 30px;
+color: #f43d3d;
+}
+.search-icon:hover{
+    outline: #f43d3d;
+    color: #302eac;
+    border: 1px solid #f43d3d!important;
+    transition: .3s;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.hosting-example{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top: 50px;
+}
+
+.btn{
+    text-align: center;
+    font-size: 16px;
+    font-weight: medium;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #05035e;
+    margin-right: 8px;
+    padding: 10px 12px;
+    border-radius: 20px;
+}
+.btn:focus{
+    background-color: #2799f0;
+    color: white;
+}
+
+.card-container{
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto ;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.card{
+    /* width: 420px; */
+    height: 500px;
+    color: white;
+    border: 2;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 8px #dad8d8;
+
+}
+.card-bussiness{
+    /* width: 420px; */
+    height: 580px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 8px #dad8d8;
+
+}
+.card-header{
+    width: 100%;
+    height: 200px;
+    background-color: #2799f0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 70px;
+    border-radius: 10px 10px 0px 0px;
+}
+.card-header-bussiness{
+    width: 100%;
+    height: 240px;
+    background-color: #0071c7;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 70px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-for{
+    text-align: start;
+    font-size: 17px;
+}
+.card-price{
+ font-size: 40px;
+}
+.card-expired{
+    font-size: 17px;
+    margin: 0px 10px;
+}
+.off-btn{
+    padding: 8px 10px;
+    border-radius: 20px;
+    background-color: #0d76c6;
+    color: white;
+    border: none;
+    outline: none;
+}
+.card-suggetion{
+    text-align: start;
+}
+.fa-check{
+    color: #13bf27;
+    font-size: 30px;
+    text-align: start;
+}
+
+.card-item{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0px 70px;
+}
+.card-item-bussiness{
+    width: 100%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0px 70px;
+}
+
+.card-facilites{
+    margin: 20px 0px;
+    color: black;
+    text-align: start;
+    font-size: 18px;
+ 
+}
+.btn-cart{
+     width: 100%;
+    height: 55px;   
+}
+.btn-cart-bussiness{
+     width: 100%;
+    height: 55px;   
+}
+.card-btn{
+    width: 100%;
+    height: 55px;  
+    font-size: 18px;
+    border: 2px solid #05035e;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.card-btn-bussiness{
+    width: 100%;
+    height: 55px;  
+    font-size: 18px;
+    border: 2px solid #05035e;
+    background-color: #05035e;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.card-btn:hover{
+    transition: .3s;
+    border: 2px solid #05035e;
+    background-color: #05035e;
+    color: white;
+}
+.card-btn-bussiness:hover{
+    transition: .3s;
+    border: 2px solid #05035e;
+    background-color: transparent;
+    color: #05035e;
 }
