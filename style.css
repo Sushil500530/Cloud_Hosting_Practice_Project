@@ -439,6 +439,17 @@ a {
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
+    margin-bottom: 65px;
+    flex-wrap: wrap;
+}
+
+.keep-growing-mid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
 .keep-growing-left {
@@ -468,6 +479,7 @@ a {
     color: #05035e;
     font-size: 25px;
     font-weight: 700;
+    margin-bottom: 8px;
 }
 
 .growing-d {
@@ -673,6 +685,9 @@ strong {
 }
 
 /* Customer Saying section end */
+
+
+/* footer section start */
 .footer {
     background-color: black;
     width: 100%;
@@ -709,7 +724,7 @@ strong {
     flex-wrap: wrap;
 }
 
-.ready-section-d {}
+/* .ready-section-d {} */
 
 .ready-section-desc {
     font-size: 18px;
@@ -739,7 +754,7 @@ strong {
     transition: .3s;
 }
 
-.footer-logo {}
+/* .footer-logo {} */
 
 .footer-h {
     color: white;
@@ -765,3 +780,5 @@ strong {
     font-weight: 400;
     color: #8a8e90;
 }
+
+/* footer section end */
