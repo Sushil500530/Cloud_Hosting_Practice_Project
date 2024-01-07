@@ -61,7 +61,7 @@ body {
 }
 
 a {
-    color: white;
+    color: #979da1;
     text-decoration: none;
 }
 
@@ -74,8 +74,8 @@ a {
 }
 
 /* .details {
- 
-} */
+     
+    } */
 
 .benner-headline {
     font-size: 80px;
@@ -256,9 +256,7 @@ a {
     grid-template-rows: auto auto auto;
     grid-gap: 20px;
     align-items: center;
-    justify-content: space-between;
-    /* display: flex;
-    flex-wrap: wrap; */
+
 }
 
 .card {
@@ -269,6 +267,7 @@ a {
     border-radius: 10px;
     margin-top: 50px;
     box-shadow: 2px 2px 8px #dad8d8;
+    flex: 1;
 
 }
 
@@ -279,7 +278,7 @@ a {
     border-radius: 10px;
     margin-top: 50px;
     box-shadow: 2px 2px 8px #dad8d8;
-
+    flex: 1;
 }
 
 .card-header {
@@ -323,7 +322,16 @@ a {
 .off-btn {
     padding: 8px 10px;
     border-radius: 20px;
-    background-color: #0d76c6;
+    background-color: #3585c2;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.off-btn-buss {
+    padding: 8px 10px;
+    border-radius: 20px;
+    background-color: #1d6093;
     color: white;
     border: none;
     outline: none;
@@ -416,7 +424,7 @@ a {
 /* keep growing section start   */
 
 
-.keep-growing-header {}
+/* .keep-growing-header {} */
 
 .keep-growing-headline {
     font-size: 36px;
@@ -443,7 +451,7 @@ a {
     flex-wrap: wrap;
 }
 
-.keep-growing-mid{
+.keep-growing-mid {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -526,11 +534,11 @@ a {
 }
 
 /* .user-control{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-} */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    } */
 .user-con-headline {
     font-size: 36px;
     font-weight: 700;
@@ -770,15 +778,290 @@ strong {
     line-height: 2;
     cursor: pointer;
 }
+
 .footer-d:hover {
     text-decoration: underline;
     color: #0d76c6;
     transition: .3s;
 }
-.footer-coppyright{
+
+.footer-coppyright {
     font-size: 17px;
     font-weight: 400;
     color: #8a8e90;
 }
 
 /* footer section end */
+
+/* media queries for responsive  */
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .manubar {
+        display: none;
+    }
+
+    .benner-headline,
+    .web-hosting-headline,
+    .keep-growing-headline,
+    .user-con-headline {
+        font-size: 25px;
+    }
+
+    .banner-desc,
+    .keep-growing-desc,
+    .growing-d {
+        font-size: 14px;
+    }
+
+    .banner-btn {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    .search-bar {
+        width: 100%;
+        height: 57px;
+
+    }
+
+    .search-icon {
+        width: 100px;
+        height: 90%;
+        font-size: 14px;
+        margin-top: 3px;
+        margin-right: 2px;
+    }
+
+    .input-search-image {
+        display: none;
+    }
+
+    .hosting-example {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card-container,
+    .user-control-header {
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card-header {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .card-bussiness {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .card-suggetion,
+    .card-for {
+        margin-top: 10px;
+    }
+
+    .card-btn,
+    .card-facilites {
+        font-size: 15px;
+    }
+
+    .keep-growing-details,
+    .user-control-details {
+        flex-direction: column;
+        gap: 40px;
+        padding: 10px;
+    }
+
+    .keep-growing-left,
+    .keep-growing-right,
+    .user-control-left,
+    .user-control-right {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .keep-growing-mid {
+        padding: 0;
+    }
+
+    .growing-h,
+    .ready-section-headline {
+        font-size: 20px;
+    }
+
+    .keep-growing-btn {
+        font-size: 17px;
+    }
+
+    .customer-details-content {
+        height: auto;
+        flex-direction: column;
+        gap: 28px;
+
+    }
+
+    .user-control-h {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .customer-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .customer-description {
+        width: 100%;
+        padding: 50px 0px;
+    }
+
+    .customer-quates {
+        left: 0px;
+        top: 250px;
+    }
+
+    .ready-section {
+        width: 75%;
+        top: -160px;
+    }
+    .ready-section-desc {
+        font-size: 15px
+    }
+
+    .footer-container {
+        padding: 30px;
+    }
+    .cover-header{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    .card-container,
+    .user-control-header {
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+.card-item {
+    width: 100%;
+    height: auto;
+    padding: 30px 70px;
+}
+
+.card-item-bussiness {
+    width: 100%;
+    height: auto;
+      padding: 30px 70px;
+}
+
+    .card-suggetion,
+    .card-for {
+        margin-top: 10px;
+    }
+
+    .card-btn,
+    .card-facilites {
+        font-size: 15px;
+    }
+
+    .keep-growing-details,
+    .user-control-details {
+        flex-direction: column;
+        gap: 40px;
+        padding: 10px;
+    }
+
+    .keep-growing-left,
+    .keep-growing-right,
+    .user-control-left,
+    .user-control-right {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .keep-growing-mid {
+        padding: 0;
+    }
+
+    .growing-h,
+    .ready-section-headline {
+        font-size: 20px;
+    }
+
+    .keep-growing-btn {
+        font-size: 17px;
+    }
+
+    .customer-details-content {
+        height: auto;
+        flex-direction: column;
+        gap: 28px;
+
+    }
+
+    .user-control-h {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .customer-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .customer-description {
+        width: 100%;
+        padding: 50px 0px;
+    }
+
+    .customer-quates {
+        left: 0px;
+        top: 250px;
+    }
+
+    .ready-section {
+        width: 75%;
+        top: -120px;
+    }
+    .ready-section-desc {
+        font-size: 15px
+    }
+    .footer-container {
+        padding: 30px;
+    }
+    .cover-header{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {}
