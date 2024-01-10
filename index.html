@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Standard</title>
-    <link rel="shortcut icon" href="./icons/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./icons/logo.svg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -21,14 +21,21 @@
           <div class="logo">
             <img src="./icons/logo.svg" alt="" />
           </div>
-          <div class="manubar">
-            <ul>
-              <li><a href="#hosting">Hosting</a></li>
-              <li><a href="#vps">VPS</a></li>
-              <li><a href="#domain">Domain</a></li>
-              <li><a href="#pricing">Pricing</a></li>
-            </ul>
-          </div>
+            <nav>
+              <ul>
+                <li onclick="handleHosting()">
+                  <a href="#hosting">Hosting</a>
+                </li>
+                <li onclick="handleVPS()"><a href="#vps">VPS</a></li>
+                <li onclick="handleDomain()"><a href="#domain">Domain</a></li>
+                <li onclick="handlePricing()">
+                  <a href="#pricing">Pricing</a>
+                </li>
+              </ul>
+              <label onclick="handleClick()" id="icon">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+            </nav>
         </div>
         <div class="details-bar">
           <div class="details">
@@ -47,20 +54,21 @@
         </div>
       </div>
     </header>
+
     <main>
       <!-- web hosting start section start  -->
       <section>
         <div class="web-hosting-section">
-        <div class="container">
-          <h1 class="web-hosting-headline">
-            The best webhosting Starting at per month
-          </h1>
-          <p class="web-hosting-desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
-            eligendi .<br />
-            quod quasi excepturi totam maiores non, numquam nemo!
-          </p>
-        </div>
+          <div class="container">
+            <h1 class="web-hosting-headline">
+              The best webhosting Starting at per month
+            </h1>
+            <p class="web-hosting-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              eligendi .<br />
+              quod quasi excepturi totam maiores non, numquam nemo!
+            </p>
+          </div>
           <form class="search-bar">
             <input
               class="input-search"
@@ -174,7 +182,15 @@
               </div>
               <h1 class="growing-h">Super Easy to Use</h1>
               <p class="growing-d">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aut, <br> quaerat, ex rem veniam repudiandae nemo dolorum corporis asperiores, <br> vero voluptate voluptatem facilis nihil? Cumque quis dicta quod <br> quibusdam Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Nostrum quis quaerat expedita.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                aut, <br />
+                quaerat, ex rem veniam repudiandae nemo dolorum corporis
+                asperiores, <br />
+                vero voluptate voluptatem facilis nihil? Cumque quis dicta quod
+                <br />
+                quibusdam Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. <br />
+                Nostrum quis quaerat expedita.
               </p>
               <button class="keep-growing-btn">
                 Learn More <i class="fa-solid fa-arrow-right-long"></i>
@@ -185,39 +201,55 @@
             </div>
           </div>
         </div>
-          <div class="keep-growing-mid container">
-            <div class="keep-growing-left">
-              <div class="growing-image">
-                <img src="./icons/computer.svg" alt="image" />
-              </div>
-              <h1 class="growing-h">Super Easy to Use</h1>
-              <p class="growing-d">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aut, <br> quaerat, ex rem veniam repudiandae nemo dolorum corporis asperiores, <br> vero voluptate voluptatem facilis nihil? Cumque quis dicta quod <br> quibusdam Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Nostrum quis quaerat expedita.
-              </p>
-              <button class="keep-growing-btn">
-                Learn More <i class="fa-solid fa-arrow-right-long"></i>
-              </button>
+        <div class="keep-growing-mid container">
+          <div class="keep-growing-left">
+            <div class="growing-image">
+              <img src="./icons/computer.svg" alt="image" />
             </div>
-            <div class="keep-growing-right">
-              <img src="./images/fast.jpg" alt="" />
-            </div>
+            <h1 class="growing-h">Super Easy to Use</h1>
+            <p class="growing-d">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              aut, <br />
+              quaerat, ex rem veniam repudiandae nemo dolorum corporis
+              asperiores, <br />
+              vero voluptate voluptatem facilis nihil? Cumque quis dicta quod
+              <br />
+              quibusdam Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <br />
+              Nostrum quis quaerat expedita.
+            </p>
+            <button class="keep-growing-btn">
+              Learn More <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+          <div class="keep-growing-right">
+            <img src="./images/fast.jpg" alt="" />
+          </div>
         </div>
-          <div class="keep-growing-details container">
-            <div class="keep-growing-left">
-              <div class="growing-image">
-                <img src="./icons/settings.svg" alt="image" />
-              </div>
-              <h1 class="growing-h">Super Easy to Use</h1>
-              <p class="growing-d">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aut, <br> quaerat, ex rem veniam repudiandae nemo dolorum corporis asperiores, <br> vero voluptate voluptatem facilis nihil? Cumque quis dicta quod <br> quibusdam Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Nostrum quis quaerat expedita.
-              </p>
-              <button class="keep-growing-btn">
-                Learn More <i class="fa-solid fa-arrow-right-long"></i>
-              </button>
+        <div class="keep-growing-details container">
+          <div class="keep-growing-left">
+            <div class="growing-image">
+              <img src="./icons/settings.svg" alt="image" />
             </div>
-            <div class="keep-growing-right">
-              <img src="./images/wordpress.jpg" alt="" />
-            </div>
+            <h1 class="growing-h">Super Easy to Use</h1>
+            <p class="growing-d">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              aut, <br />
+              quaerat, ex rem veniam repudiandae nemo dolorum corporis
+              asperiores, <br />
+              vero voluptate voluptatem facilis nihil? Cumque quis dicta quod
+              <br />
+              quibusdam Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <br />
+              Nostrum quis quaerat expedita.
+            </p>
+            <button class="keep-growing-btn">
+              Learn More <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+          <div class="keep-growing-right">
+            <img src="./images/wordpress.jpg" alt="" />
+          </div>
         </div>
       </section>
       <!-- keep growing section start  -->
@@ -371,4 +403,13 @@
       </div>
     </footer>
   </body>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- <script>
+    $(document).ready(function () {
+      $("#icon").click(function () {
+        $("ul").toggleClass("show");
+      });
+    });
+  </script> -->
 </html>

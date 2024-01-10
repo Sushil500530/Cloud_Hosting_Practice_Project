@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -31,7 +33,6 @@ body {
     padding: 20px;
 
 }
-
 .sub-header {
     display: flex;
     align-items: center;
@@ -40,42 +41,50 @@ body {
     z-index: 1;
     padding: 20px 10px;
 }
-
-.manubar ul {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    color: white;
-    list-style: none;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 8px;
-}
-
-.manubar ul li {
+nav ul {
+    float: right;
     margin-right: 30px;
 }
 
-.manubar ul li a:hover {
-    color: #2799f0;
+nav li {
+    display: inline-block;
+    margin: 0 8px;
 }
 
+nav #icon {
+    color: white;
+    font-size: 25px;
+    float: right;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+}
+nav ul {
+    margin-right: 20px;
+}
+
+nav ul li a:hover {
+    color: #2799f0;
+}
 a {
-    color: #979da1;
-    text-decoration: none;
+    font-size: 18px;
+    color: #cad0d6;
 }
 
 .details-bar {
     width: 100%;
-    height: auto;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 
-/* .details {
-     
-    } */
+.details {
+     width: 100%;
+     height: auto;
+     flex: 1;
+    }
 
 .benner-headline {
     font-size: 80px;
@@ -116,7 +125,8 @@ a {
 
 .image {
     width: 50%;
-    height: 65vh;
+    height: 60vh;
+    padding-bottom: 30px;
 }
 
 .image img {
@@ -791,9 +801,7 @@ strong {
     color: #8a8e90;
 }
 
-/* footer section end */
 
-/* media queries for responsive  */
 
 @media screen and (max-width: 640px) {
     .container {
@@ -801,9 +809,40 @@ strong {
         height: 100%;
         padding: 10px;
     }
+    .header {
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        z-index: 1;
+        background-color: black;
+    }
+    nav #icon {
+        display: block;
+    }
 
-    .manubar {
-        display: none;
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        top: 100px;
+        left: -100%;
+        border-top: 1px solid wheat;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 40px 0;
+    } 
+    nav a{
+        font-size: 20px;
+    }
+    a.active, a:hover{
+        color: #7885fa;
+    }
+    nav ul.show{
+        left: 0;
     }
 
     .benner-headline,
@@ -937,6 +976,7 @@ strong {
         width: 75%;
         top: -160px;
     }
+
     .ready-section-desc {
         font-size: 15px
     }
@@ -944,7 +984,8 @@ strong {
     .footer-container {
         padding: 30px;
     }
-    .cover-header{
+
+    .cover-header {
         width: 95%;
     }
 }
@@ -955,12 +996,13 @@ strong {
         height: 100%;
         padding: 10px;
     }
+
     .card-container {
         display: flex;
         flex-direction: column;
-       
+
     }
-    
+
     .card-container,
     .user-control-header {
         width: 100%;
@@ -969,18 +1011,20 @@ strong {
         flex-wrap: wrap;
     }
 
-
-.card-item {
-    width: 100%;
-    height: auto;
-    padding: 30px 70px;
+.benner-headline{
+    font-size: 32px;
 }
+    .card-item {
+        width: 100%;
+        height: auto;
+        padding: 30px 70px;
+    }
 
-.card-item-bussiness {
-    width: 100%;
-    height: auto;
-      padding: 30px 70px;
-}
+    .card-item-bussiness {
+        width: 100%;
+        height: auto;
+        padding: 30px 70px;
+    }
 
     .card-suggetion,
     .card-for {
@@ -1053,15 +1097,18 @@ strong {
         width: 75%;
         top: -120px;
     }
+
     .ready-section-desc {
         font-size: 15px
     }
+
     .footer-container {
         padding: 30px;
     }
-    .cover-header{
+
+    .cover-header {
         width: 90%;
     }
-}
+    
 
-@media only screen and (min-width: 1024px) {}
+}
