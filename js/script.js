@@ -7,6 +7,7 @@ $(document).ready(function handleClick() {
 
 
 async function handleHosting(event) {
+    alert('I not understand to click this button how to work?')
     const res = await fetch('https://jsonplaceholder.typicode.com/posts')
     const data = await res.json()
     const get = loadData(data.slice(0, 10))
@@ -29,8 +30,14 @@ function loadData(items) {
         main.appendChild(div);
     }
 }
-
+function handleVPS(){
+    alert('I not understand to click this button how to work?')
+}
+function handleDomain(){
+    alert('I not understand to click this button how to work?')
+}
 function handlePricing() {
+    alert('I not understand to click this button how to work?')
     const main = document.getElementById('l-main');
     console.log('pricing clicked');
     const div = document.createElement('div');
