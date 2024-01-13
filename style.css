@@ -13,14 +13,13 @@ body {
 }
 
 .container {
-    width: 75%;
-    height: 100%;
+    max-width: 1240px;
     margin: 0 auto;
+    height: 100%;
     overflow: hidden;
 }
 
 .header {
-    width: 100%;
     height: 95vh;
     position: relative;
     background-color: black;
@@ -31,7 +30,8 @@ body {
 }
 
 .cover-header {
-    width: 75%;
+    max-width: 1240px;
+    margin: 0 auto;
     height: 100%;
     margin: 0 auto;
     padding: 20px;
@@ -43,7 +43,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    padding: 20px 10px;
+    padding: 20px 0px;
 }
 
 nav ul {
@@ -263,11 +263,10 @@ a {
 }
 
 .card-container {
-    width: 75%;
-    height: 100%;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    margin: 28px auto;
     padding: 20px;
-    margin-top: 28px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
@@ -277,25 +276,26 @@ a {
 }
 
 .card {
-    /* width: 420px; */
-    height: 500px;
+    width: 100%;
+    height: auto;
     color: white;
     border: 2;
     border-radius: 10px;
     margin-top: 50px;
     box-shadow: 2px 2px 8px #dad8d8;
     flex: 1;
-
+    padding-bottom: 50px;
 }
 
 .card-bussiness {
-    /* width: 420px; */
-    height: 580px;
+    width: 100%;
+    height: auto;
     color: white;
     border-radius: 10px;
     margin-top: 50px;
     box-shadow: 2px 2px 8px #dad8d8;
     flex: 1;
+    padding-bottom: 50px;
 }
 
 .card-header {
@@ -364,19 +364,9 @@ a {
     text-align: start;
 }
 
-.card-item {
+.card-item , .card-item-bussiness {
     width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    padding: 0px 70px;
-}
-
-.card-item-bussiness {
-    width: 100%;
-    height: 290px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -548,7 +538,7 @@ a {
     background-color: black;
     clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 86%);
     color: white;
-    padding: 80px 0px;
+    padding: 120px 0px;
 }
 
 .user-con-headline {
@@ -804,14 +794,136 @@ strong {
     color: #8a8e90;
 }
 
+@media only screen and (max-width: 1024px) {
+    .card-item, .card-item-bussiness{
+        padding: 0px 20px;
+    }
 
+}
 
-@media screen and (max-width: 640px) {
+ @media only screen and (max-width: 768px) {
+     .card-container{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: auto auto ;
+     }
+
     .container {
         width: 100%;
         height: 100%;
         padding: 10px;
     }
+
+    .user-control-header {
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .benner-headline {
+        font-size: 32px;
+    }
+    .card-suggetion,
+    .card-for {
+        margin-top: 10px;
+    }
+
+    .card-btn,
+    .card-facilites {
+        font-size: 15px;
+    }
+
+    .keep-growing-details,
+    .user-control-details {
+        flex-direction: column;
+        gap: 40px;
+        padding: 10px;
+    }
+
+    .keep-growing-left,
+    .keep-growing-right,
+    .user-control-left,
+    .user-control-right {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .keep-growing-mid {
+        padding: 0;
+    }
+
+    .growing-h,
+    .ready-section-headline {
+        font-size: 20px;
+    }
+
+    .keep-growing-btn {
+        font-size: 17px;
+    }
+
+    .customer-details-content {
+        height: auto;
+        flex-direction: column;
+        gap: 28px;
+
+    }
+
+    .user-control-h {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .customer-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .customer-description {
+        width: 100%;
+        padding: 50px 0px;
+    }
+
+    .customer-quates {
+        left: 0px;
+        top: 250px;
+    }
+
+    .ready-section {
+        width: 75%;
+        top: -120px;
+    }
+
+    .ready-section-desc {
+        font-size: 15px
+    }
+
+    .footer-container {
+        padding: 30px;
+    }
+
+    .cover-header {
+        width: 90%;
+    }
+} 
+
+
+
+@media screen and (max-width: 640px) {
+
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto ;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
 
     .header {
         width: 100%;
@@ -896,7 +1008,6 @@ strong {
         gap: 20px;
     }
 
-    .card-container,
     .user-control-header {
         width: 100%;
         height: auto;
@@ -998,128 +1109,4 @@ strong {
     .cover-header {
         width: 95%;
     }
-}
-
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-    }
-
-    .card-container {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .card-container,
-    .user-control-header {
-        width: 100%;
-        height: auto;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .benner-headline {
-        font-size: 32px;
-    }
-
-    .card-item {
-        width: 100%;
-        height: auto;
-        padding: 30px 70px;
-    }
-
-    .card-item-bussiness {
-        width: 100%;
-        height: auto;
-        padding: 30px 70px;
-    }
-
-    .card-suggetion,
-    .card-for {
-        margin-top: 10px;
-    }
-
-    .card-btn,
-    .card-facilites {
-        font-size: 15px;
-    }
-
-    .keep-growing-details,
-    .user-control-details {
-        flex-direction: column;
-        gap: 40px;
-        padding: 10px;
-    }
-
-    .keep-growing-left,
-    .keep-growing-right,
-    .user-control-left,
-    .user-control-right {
-        width: 100%;
-        height: auto;
-        padding-bottom: 30px;
-    }
-
-    .keep-growing-mid {
-        padding: 0;
-    }
-
-    .growing-h,
-    .ready-section-headline {
-        font-size: 20px;
-    }
-
-    .keep-growing-btn {
-        font-size: 17px;
-    }
-
-    .customer-details-content {
-        height: auto;
-        flex-direction: column;
-        gap: 28px;
-
-    }
-
-    .user-control-h {
-        font-size: 17px;
-        margin-bottom: 8px;
-    }
-
-    .customer-image {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-
-    .customer-description {
-        width: 100%;
-        padding: 50px 0px;
-    }
-
-    .customer-quates {
-        left: 0px;
-        top: 250px;
-    }
-
-    .ready-section {
-        width: 75%;
-        top: -120px;
-    }
-
-    .ready-section-desc {
-        font-size: 15px
-    }
-
-    .footer-container {
-        padding: 30px;
-    }
-
-    .cover-header {
-        width: 90%;
-    }
-
-
 }
