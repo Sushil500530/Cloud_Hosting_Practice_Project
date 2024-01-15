@@ -21,21 +21,21 @@
           <div class="logo">
             <img src="./icons/logo1.png" alt="logo" />
           </div>
-            <nav>
-              <ul>
-                <li onclick="handleHosting()">
-                  <a href="#hosting">Hosting</a>
-                </li>
-                <li onclick="handleVPS()"><a href="#vps">VPS</a></li>
-                <li onclick="handleDomain()"><a href="#domain">Domain</a></li>
-                <li onclick="handlePricing()">
-                  <a href="#pricing">Pricing</a>
-                </li>
-              </ul>
-              <label onclick="handleClick()" id="icon">
-                <i class="fa-solid fa-bars"></i>
-              </label>
-            </nav>
+          <nav>
+            <ul>
+              <li onclick="handleHosting()">
+                <a href="#hosting">Hosting</a>
+              </li>
+              <li onclick="handleVPS()"><a href="#vps">VPS</a></li>
+              <li onclick="handleDomain()"><a href="#domain">Domain</a></li>
+              <li onclick="handlePricing()">
+                <a href="#pricing">Pricing</a>
+              </li>
+            </ul>
+            <label onclick="handleClick()" id="icon">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+          </nav>
         </div>
         <div class="details-bar">
           <div class="details">
@@ -64,8 +64,10 @@
               The best webhosting Starting at per month
             </h1>
             <p class="web-hosting-desc">
-              Prioritize scalability to accommodate your website's growth, and ensure the hosting plan.<br />
-             includes ample resources, security features, and a user-friendly interface.
+              Prioritize scalability to accommodate your website's growth, and
+              ensure the hosting plan.<br />
+              includes ample resources, security features, and a user-friendly
+              interface.
             </p>
           </div>
           <form class="search-bar">
@@ -86,15 +88,15 @@
             </button>
           </form>
           <div class="hosting-example container">
-            <button class="btn">.com $9.26</button>
-            <button class="btn btn-active">.sg $7.91</button>
-            <button class="btn">.space $12.98</button>
-            <button class="btn">.info $12.15</button>
-            <button class="btn">.xyz $10.15</button>
+            <button onclick="handleCom()" class="btn">.com $9.26</button>
+            <button onclick="handleHosting()" class="btn btn-active">.sg $7.91</button>
+            <button onclick="handleHosting()" class="btn">.space $12.98</button>
+            <button onclick="handleHosting()" class="btn">.info $12.15</button>
+            <button onclick="handleHosting()" class="btn">.xyz $10.15</button>
             <button class="btn">more...</button>
           </div>
-          <div class="card-container card-container-c">
-            <div class="card">
+          <div id="card-container" class="card-container card-container-c">
+            <!-- <div class="card">
               <div class="card-header">
                 <h1 class="card-for">Entry</h1>
                 <h1 class="card-price">
@@ -141,7 +143,7 @@
               <div class="card-header">
                 <h1 class="card-for">Entry</h1>
                 <h1 class="card-price">
-                  $54 <span class="card-expired">/month</span>
+                  $14 <span class="card-expired">/month</span>
                   <button class="off-btn">10% OFF</button>
                 </h1>
                 <p class="card-suggetion">Easy start on the cloud</p>
@@ -158,7 +160,7 @@
                   <button class="card-btn">BUY NOW</button>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -181,8 +183,11 @@
               </div>
               <h1 class="growing-h">Super Easy to Use</h1>
               <p class="growing-d">
-                Opt for a web host with a user-friendly interface and an intuitive control panel for effortless website management.
-                Prioritize providers with excellent customer support to quickly address any questions or issues, making the overall hosting experience super easy for you.
+                Opt for a web host with a user-friendly interface and an
+                intuitive control panel for effortless website management.
+                Prioritize providers with excellent customer support to quickly
+                address any questions or issues, making the overall hosting
+                experience super easy for you.
               </p>
               <button class="keep-growing-btn">
                 Learn More <i class="fa-solid fa-arrow-right-long"></i>
@@ -200,8 +205,11 @@
             </div>
             <h1 class="growing-h">Simple First Websites</h1>
             <p class="growing-d">
-              Easy-to-use website builder with drag-and-drop simplicity, offering diverse templates for quick setup without coding.
-              Intuitive content management, scalable with plugins and customizable themes, making it ideal for bloggers and adaptable for future growth.
+              Easy-to-use website builder with drag-and-drop simplicity,
+              offering diverse templates for quick setup without coding.
+              Intuitive content management, scalable with plugins and
+              customizable themes, making it ideal for bloggers and adaptable
+              for future growth.
             </p>
             <button class="keep-growing-btn">
               Learn More <i class="fa-solid fa-arrow-right-long"></i>
@@ -218,7 +226,11 @@
             </div>
             <h1 class="growing-h">WordPress made easy</h1>
             <p class="growing-d">
-              WordPress.com offers a straightforward setup process, guiding users through domain selection, theme customization, and content creation. WordPress.com allows for easy expansion with a range of plugins and customizable themes, making it adaptable for users as their website needs grow.
+              WordPress.com offers a straightforward setup process, guiding
+              users through domain selection, theme customization, and content
+              creation. WordPress.com allows for easy expansion with a range of
+              plugins and customizable themes, making it adaptable for users as
+              their website needs grow.
             </p>
             <button class="keep-growing-btn">
               Learn More <i class="fa-solid fa-arrow-right-long"></i>
@@ -292,7 +304,9 @@
         <div class="customer-saying-header container">
           <h1 class="keep-growing-headline">What our Customer are Saying</h1>
           <p class="keep-growing-desc">
-            With a focus on performance, security, and seamless scalability, we are dedicated to providing <br> a hosting solution that exceeds your expectations.
+            With a focus on performance, security, and seamless scalability, we
+            are dedicated to providing <br />
+            a hosting solution that exceeds your expectations.
           </p>
           <div class="customer-details-content">
             <div class="customer-image">
@@ -303,7 +317,12 @@
             </div>
             <div class="customer-description">
               <p>
-                "I trusted destination for reliable and scalable cloud web hosting solutions. Explore our cutting-edge services designed to elevate your online presence. From high-performance servers to seamless scalability, we empower businesses of all sizes. Choose us for a cloud hosting experience that ensures speed, security, and success for your website"
+                "I trusted destination for reliable and scalable cloud web
+                hosting solutions. Explore our cutting-edge services designed to
+                elevate your online presence. From high-performance servers to
+                seamless scalability, we empower businesses of all sizes. Choose
+                us for a cloud hosting experience that ensures speed, security,
+                and success for your website"
               </p>
               <strong>Jhone Lumeo <span class="hr"></span></strong>
               <p class="title-down">Mosh Company ceo</p>
